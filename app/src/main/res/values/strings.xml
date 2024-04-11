@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="signin_to_account">Sign in to your account</string>
+    <string name="already_have_an_account"><u>Already have an account?</u></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="create_a_new_account_underlined"><u>Create a new account</u></string>
+    <string name="google">google</string>
+    <string name="facebook">facebook</string>
+    <string name="username">Username</string>
+    <string name="sign_up">Sign up</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="password_confirm_password_not_same">Password and Confirm Password should be same</string>
+    <string name="username_error_invalid_length">Username must be 3 to 30 characters long</string>
+    <string name="username_error_invalid_format">Username must contain only letters, underscores and digits</string>
+    <string name="password_error_invalid_length">Password must be 6 to 30 characters long</string>
+    <string name="password_error_invalid_format">Password must contain at least one letter, one special symbol and one digit</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="username_whitespaces_not_allowed">Username must not contain whitespaces</string>
+    <string name="password_whitespaces_not_allowed">Password must not contain whitespaces</string>
+
+    <string name="exit_confirm_msg">Are you sure you want to exit the application?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="something_went_wrong">Something went wrong</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="profile">Profile</string>
+    <string name="dark_mode">Dark mode</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="best_score">Best Score:</string>
+    <string name="zero">0</string>
+    <string name="total_score">Total Score:</string>
+    <string name="edit_profile">edit profile button</string>
+    <string name="general_knowledge">General Knowledge</string>
+    <string name="science_and_nature">Science And Nature</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="computers">Computers</string>
+    <string name="sports">Sports</string>
+    <string name="gadgets">Gadgets</string>
+    <string name="history">History</string>
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="clear_response"><u>Clear Response</u></string>
+    <string name="people_evaluating_results">People evaluating results</string>
+    <string name="continue_game">Continue</string>
+    <string name="_0">0</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="unattempted">Unattempted</string>
+    <string name="total_quizzes">Total Quizzes</string>
+</resources>
