@@ -1,20 +1,20 @@
 package com.shrey.project
 
-import android.app.ProgressDialog
-import android.content.Context
-import android.content.Intent
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
-import android.widget.Toast
-import androidx.recyclerview.widget.RecyclerView
-import com.android.volley.Request
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
-import com.shrey.project.models.Question
-import com.shrey.project.models.Quiz
-import org.json.JSONObject
+import android.app.ProgressDialog // Importing ProgressDialog class to show progress dialog
+import android.content.Context // Importing Context class
+import android.content.Intent // Importing Intent class for launching activities
+import android.view.LayoutInflater // Importing LayoutInflater class for inflating layouts
+import android.view.View // Importing View class
+import android.view.ViewGroup // Importing ViewGroup class
+import android.widget.Button // Importing Button class
+import android.widget.Toast // Importing Toast class for displaying messages
+import androidx.recyclerview.widget.RecyclerView // Importing RecyclerView class
+import com.android.volley.Request // Importing Request class from Volley library
+import com.android.volley.toolbox.StringRequest // Importing StringRequest class from Volley library
+import com.android.volley.toolbox.Volley // Importing Volley class for network requests
+import com.shrey.project.models.Question // Importing Question model class
+import com.shrey.project.models.Quiz // Importing Quiz model class
+import org.json.JSONObject // Importing JSONObject class for JSON processing
 
 // Adapter for displaying quizzes in a RecyclerView
 class QuizAdapter(private val quizList: ArrayList<Quiz>, private val context: Context) :
@@ -47,6 +47,7 @@ class QuizAdapter(private val quizList: ArrayList<Quiz>, private val context: Co
         val button: Button = itemView.findViewById(R.id.btnSelectedQuiz)
     }
 
+    // Method invoked by RecyclerView when creating new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // Inflate the layout for quiz item
         val inflater = LayoutInflater.from(parent.context)
@@ -54,6 +55,7 @@ class QuizAdapter(private val quizList: ArrayList<Quiz>, private val context: Co
         return ViewHolder(quizView)
     }
 
+    // Method invoked by RecyclerView when it needs to display data at a specific position
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentObj = quizList[position]
         val button = holder.button
@@ -71,6 +73,7 @@ class QuizAdapter(private val quizList: ArrayList<Quiz>, private val context: Co
         }
     }
 
+    // Method invoked by RecyclerView to get the number of items in the dataset
     override fun getItemCount(): Int {
         return quizList.size
     }
@@ -138,5 +141,4 @@ class QuizAdapter(private val quizList: ArrayList<Quiz>, private val context: Co
             context.startActivity(intent)
         }
     }
-
 }

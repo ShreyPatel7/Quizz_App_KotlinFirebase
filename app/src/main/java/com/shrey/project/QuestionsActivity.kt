@@ -12,27 +12,27 @@ class QuestionsActivity : AppCompatActivity() {
 
     // Constants for storing response data
     companion object {
-        const val CORRECT_RESPONSE = "correct responses"
-        const val NO_RESPONSE = "no responses"
+        const val CORRECT_RESPONSE = "correct responses" // Storing the number of correct responses
+        const val NO_RESPONSE = "no responses" // Storing the number of no responses
     }
 
     // View binding instance
     private lateinit var binding: ActivityQuestionsBinding
 
     // List of questions
-    private val listOfQuestions = Constants.questionsList
+    private val listOfQuestions = Constants.questionsList // Storing the list of questions
 
     // Current question index
-    private var currentPosition = 0
+    private var currentPosition = 0 // Storing the index of the current question
 
     // Selected option index
-    private var selectedOption = -1
+    private var selectedOption = -1 // Storing the index of the selected option
 
     // Number of correct responses
-    private var correctResponses = 0
+    private var correctResponses = 0 // Storing the number of correct responses
 
     // Number of no responses
-    private var noResponse = 0
+    private var noResponse = 0 // Storing the number of no responses
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
